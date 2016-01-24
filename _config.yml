@@ -5,7 +5,7 @@ locale: sv_SE
 description: Äventyr i webblandet
 logo: site-logo.png
 search: true
-url: http://evafry.github.io# Jekyll configuration
+url: http://evafry.github.io 
 
 permalink:   /:categories/:title/
 markdown:    kramdown
