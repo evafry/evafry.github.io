@@ -1,13 +1,11 @@
-# Site wide configuration
+﻿# Site wide configuration
 
 title: Dr Jekyll & Ms F.
 locale: sv_SE
 description: Äventyr i webblandet
 logo: site-logo.png
 search: true
-url: http://localhost:4000
-
-# Jekyll configuration
+url: http://evafry.github.io# Jekyll configuration
 
 permalink:   /:categories/:title/
 markdown:    kramdown
