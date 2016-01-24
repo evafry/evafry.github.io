@@ -1,46 +1,30 @@
-# Jekyll Boilerplate
+# So Simple Theme
 
-This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (hashicorp/precise32) will have the following (relevant) packages installed:
+Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
 
-From start:
-* node.js (Latest stable)
-* npm
-* git 
-* bundler
+**Jekyll 3 Update:** A version of So Simple compatible with Jekyll 3 can be found in the [`jekyll3` branch](https://github.com/mmistakes/so-simple-theme/tree/jekyll3). GitHub Pages is [locked at version 2.4](https://pages.github.com/versions/) so some keep that in mind if you're trying to use 3.0 features that aren't supported there yet.
 
-From npm install:
-* jekyll (via bundler)
-* scss (via bundler)
+## So Simple Theme is all about:
 
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
+* Minimal embellishments and subtle animations.
+* Optional large feature images for posts and pages.
+* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
+* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
+* Support for Disqus Comments
 
-## Install
-Make sure you have the following installed on your system:
-* Virtual Box [https://www.virtualbox.org/](https://www.virtualbox.org/)
-* Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
+![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
 
-Now, do:
+See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
 
-1. Pull (`git pull https://github.com/1dv022/jekyll-boilerplate.git`) into your existing repo. Make sure you are in the root of your repo.
+---
 
-2. Start the virtual machine using `vagrant up` (May take 10-30 minutes this first time. Ignore red command line statements and warnings.)
+## Getting Started
 
-3. SSH into the machine using  `vagrant ssh` (Now you are connected to the virtual machine. Every command is now executed in the virtual mashine. If you do `exit` you leave the virtual machine and are back on your local computer.)
+So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
 
-4. Change directory to `cd /vagrant`
+To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
 
-5. Install depencies and github-pages `npm install`
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-6. Do a `bundle install`
-
-7. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
-
-## Daily workflow
-1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
-
-2. Start watching for changes in the jekyll files. `npm run watch`
-
-3. Open up a browser and visit the url `http://localhost:4000`
-
-4. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `src`-folder and start editing your site. When a file is saved the watch-script will auto generate the site. (including sass-files but not true for _config.yml)
-
-5. When you are done simply `ctrl+c` to abort the watch, `exit` to  exit the ssh-session and do a `vagrant halt` to stop the machine or `vagrant suspend` to only suspend it.

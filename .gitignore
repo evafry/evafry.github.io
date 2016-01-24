@@ -1,8 +1,7 @@
-.idea
-.vagrant
-Gemfile.lock
+_site
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
 node_modules
-_site/
-.sass-cache/
-.jekyll-metadata
-src/.idea
+.sass-cache
